@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="p-0 pic-edca m-0 w-100 pt-3" style="no-repeat center; background-size: cover;">
+<img src="https://lifeprep-academy.s3-us-west-1.amazonaws.com/Backgrounds/LP+Background6.jpg" class="img-fluid pic-edca">
+</div>
+
+<div class="container text-center mt-3 mb-4">
+      <h2 class="display-4 container text-center">Page <span class="text-warning">Not Found</span></h2>
+        <h3 class="text-center">This Page No Longer Available</h3>
+</div>
+<hr>
+<div class="container mt-4 mb-3">
+<nav aria-label="Page navigation example">
+  <ul class="pagination pagination-sm justify-content-end font-weight-bold">
+    <li class="page-item"><a class="page-link" href="/dashboard/">Dashboard</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="container mt-5 mb-5" style="height: 120px;">
+
+    <h4 class="text-center">It looks like the page you were trying to visit has moved or is no longer available. <br>Please visit our home page or dashboard to get started.</h4>
+</div>
+
+
+
+{% endblock %}
+
+{% comment %} 400.html -> bad request
+403.html -> http forbidden
+404.html -> page not found
+500.html -> server error {% endcomment %}
